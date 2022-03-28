@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --dark: #1A1A1A;
+  --light: #F5F4F2;
+  --green-KNTI: #00FF00;
+
+  --text-light: #E6E6E6;
+
+  --terminal-header: #292929;
+  --terminal-body: #1E1E1E;
+  --terminal-details-one: #C4C4C4;
+  --terminal-details-two: #303030;
+  --terminal-details-three: #323232;
+}
+
+html {
+  font-family: 'Ubuntu Mono', monospace;
+  color: var(--text-light);
+}
+
+body {
+  background-color: var(--dark);
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  display: none;
+
+  position: absolute;
+  content: '';
+  background-color: var(--dark);
+  opacity: .8;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 28px;
+  gap: 28px;
+}
+
+
+.menu a {
+  color: var(--text-light);
+  text-decoration: none;
+  background-color: transparent;
+  padding: 12px;
+}
+
+.light-theme-button {
+  background-color: var(--light);
+  border-radius: 30px;
+  padding: 12px 20px;
+  color: var(--dark);
+}
+
+.menu a:hover {
+  background-color: var(--green-KNTI);
+  border-radius: 30px;
+  padding: 12px;
+  color: var(--dark);
+}
+
+.terminal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.terminal-header {
+  text-align: center;
+}
+
+.echo-command-out {
+  color: var(--green-KNTI);
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
