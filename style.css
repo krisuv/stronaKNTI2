@@ -66,22 +66,31 @@ body::before {
   color: var(--text-light);
   text-decoration: none;
   background-color: transparent;
-  padding: 12px;
-}
-
-.light-theme-button {
-  background-color: var(--light);
+  padding: 8px 12px;
   border-radius: 30px;
-  padding: 12px 20px;
-  color: var(--dark);
+  transition: background-color .3s ease-in, color .3s ease-in;
 }
 
 .menu a:hover {
   background-color: var(--green-KNTI);
   border-radius: 30px;
-  padding: 12px;
+  padding: 8px 12px;
   color: var(--dark);
 }
+
+.light-theme-button {
+  background-color: var(--light);
+  border-radius: 30px;
+  padding: 8px 30px;
+  color: var(--dark);
+  transition: background-color .3s ease-in;
+}
+
+.light-theme-button:hover {
+  background-color: var(--green-KNTI);
+  cursor: pointer;
+}
+
 
 .terminal {
   display: flex;
