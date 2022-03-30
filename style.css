@@ -127,6 +127,27 @@ body::before {
   width: 34px;
   height: 34px;
   border-radius: 17px;
+  position: relative;
+}
+
+.first-part-of-x,
+.second-part-of-x {
+  background-color: var(--terminal-scroll);
+  width: 15px;
+  height: 3px;
+  border-radius: 1.5px;
+  margin: 15px auto;
+}
+
+.first-part-of-x {
+  transform: rotate(-45deg);
+}
+
+.second-part-of-x {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 9.5px;
 }
 
 hr {
