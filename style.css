@@ -186,6 +186,19 @@ hr {
   padding: 20px;
 }
 
+.span-text {
+  word-break: break-all;
+}
+
+.cursor {
+  opacity: 0;
+}
+
+.cursor-active {
+  opacity: 1;
+  transition: .3s;
+}
+
 .terminal-aside {
   background-color: var(--terminal-aside);
   flex-basis: 12px;
