@@ -105,6 +105,11 @@ body::before {
 
 .echo-command-out {
   color: var(--green-KNTI);
+  display: none;
+}
+
+.new-command {
+  display: none;
 }
 
 footer {
