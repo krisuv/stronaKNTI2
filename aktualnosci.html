@@ -11,19 +11,19 @@
   <link rel="icon" type="image/x-icon" href="img/favicon32.png">
 </head>
 <body>
-  <div class="container">
-
-    <nav class="navigation">
-      <a href="index.html"><div class="pic"></div></a>
-        <ul class="menu">
-          <li class="menu-item this-page"><a href="aktualnosci.html">aktualności</a></li>
-          <li class="menu-item"><a href="o-nas.html">o nas</a></li>
-          <li class="menu-item"><a href="kontakt.html">kontakt</a></li>
-          <li class="light-theme-button"><i class="fa-solid fa-sun"></i></li>
-        </ul>
-    </nav>
-
-    <main>
+  
+  <nav class="navigation">
+    <a href="index.html"><div class="pic"></div></a>
+    <ul class="menu">
+      <li class="menu-item this-page"><a href="aktualnosci.html">aktualności</a></li>
+      <li class="menu-item"><a href="o-nas.html">o nas</a></li>
+      <li class="menu-item"><a href="kontakt.html">kontakt</a></li>
+      <li class="light-theme-button"><i class="fa-solid fa-sun"></i></li>
+    </ul>
+  </nav>
+  
+  <div class="terminal-container">
+    <!-- <main> -->
       <section class="terminal">
         <div class="terminal-bar">
           <div class="terminal-header"><h1>Aktualności</h1></div>
@@ -36,17 +36,19 @@
         </div>
         <hr/>
         <div class="terminal-body">
-          <div class="terminal-content">
-            <p class="new-command">knti@usz:~$|</p>
+          <div class="terminal-content">            
+            <p class = "new-command"><span class="terminal-user">knti@usz:~$ </span></p>
           </div>
           <div class="terminal-aside">
             <div class="terminal-scroll"></div>
           </div>
         </div>
       </section>
-    </main>
+    <!-- </main> -->
+  </div>
 
     <footer>Copyright © 2021 KNTI.</footer>
-  </div>
+
+    <script src="cursorEffect.js"></script>
 </body>
 </html>
