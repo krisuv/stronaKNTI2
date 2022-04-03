@@ -115,7 +115,7 @@ main {
 
 
 .terminal {
-  width: 50vw;
+  width: 750px;
   height: 500px;
   display: flex;
   flex-direction: column;

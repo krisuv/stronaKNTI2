@@ -1,18 +1,17 @@
 const spanText = document.querySelector(".span-text");
-const cursor = document.querySelector(".cursor");
+const commandOut = document.querySelector(".echo-command-out");
+const newCommand = document.querySelector(".new-command");
+const terminalUser = document.querySelector(".terminal-user");
 const terminalText = 'echo ”Witaj na stronie Koła Naukowego Technologii Informacyjnych!”';
+
+const cursor = document.createElement("span");
+cursor.setAttribute("class","cursor");
+cursor.textContent = "|";
+spanText.after(cursor);
 
 let currentLetter = 0;
 const typingTime = 70;
 
-// const addLetter = () => {
-//   spanText.textContent += terminalText[currentLetter];
-//   currentLetter++;
-//   if(currentLetter >= terminalText.length) {
-//     clearInterval(terminalInterval);
-//     clearInterval(cursorInterval);
-//   }
-// }
 
 const cursorAnimation = () => {
   cursor.classList.toggle("cursor-active");
@@ -24,15 +23,16 @@ const addLetter = () => {
   if(currentLetter < terminalText.length) {
     return setTimeout(addLetter, typingTime);
   }
-  clearInterval(cursorAnimation);
-  return setTimeout(nextCommand, 3000);
+  return setTimeout(acceptCommand, 1500);
 }
 
-const nextCommand = () => {
-  const secondCursorInterval = setInterval(cursorAnimation,400);
+const acceptCommand = () => {
+  clearInterval(cursorInterval);
+  terminalUser.after(cursor);
+  setInterval(cursorAnimation, 400)
+  commandOut.style.display = "block";
+  newCommand.style.display = "block";
 }
 
-const cursorInterval = setInterval(cursorAnimation, 400);
-
-//const terminalInterval = setInterval(addLetter, typingTime);
+let cursorInterval = setInterval(cursorAnimation, 400);
 setTimeout(addLetter, 2000);
