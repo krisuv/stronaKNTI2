@@ -256,7 +256,6 @@ footer {
   position: relative;
   background: url(img/Logo.png) no-repeat;
   background-size: cover;
-  cursor: pointer;
   overflow: hidden;
 }
 
