@@ -1,6 +1,6 @@
 const spanText = document.querySelector(".span-text");
 const commandOut = document.querySelector(".echo-command-out");
-const newCommand = document.querySelector(".new-command");
+const echoCommand = document.querySelector(".new-command");
 const terminalUser = document.querySelector(".terminal-user");
 const terminalText = 'echo ”Witaj na stronie Koła Naukowego Technologii Informacyjnych!”';
 
@@ -31,7 +31,7 @@ const acceptCommand = () => {
   terminalUser.after(cursor);
   setInterval(cursorAnimation, 400)
   commandOut.style.display = "block";
-  newCommand.style.display = "block";
+  echoCommand.style.display = "block";
 }
 
 let cursorInterval = setInterval(cursorAnimation, 400);
