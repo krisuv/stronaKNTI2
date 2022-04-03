@@ -31,12 +31,6 @@ body {
   background-color: var(--dark);
   min-height: 100vh;
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
 }
 
 body::before {
@@ -52,19 +46,19 @@ body::before {
   left: 0;
 }
 
-/* .container {
-  height: 100vh;
+.container {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}
 
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-self: stretch;
-  padding: 20px 50px;
+  padding: 30px 50px;
 }
 
 .menu {
@@ -73,34 +67,41 @@ body::before {
   align-items: center;
   font-weight: 700;
   font-size: 28px;
-  gap: 28px;
-}
-
-.logo {
-  width: 100px;
+  gap: 18px;
 }
 
 .menu a {
+  display: block;
   color: var(--text-light);
   text-decoration: none;
-  background-color: transparent;
-  padding: 8px 12px;
-  border-radius: 30px;
+}
+
+.menu-item {
+  border-radius: 25px;
+  padding: 8px 18px;
   transition: background-color .3s ease-in, color .3s ease-in;
 }
 
-.menu a:hover {
+.menu-item:hover {
   background-color: var(--green-KNTI);
-  border-radius: 30px;
-  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.menu-item:hover a {
   color: var(--dark);
+}
+
+.this-page a,
+.echo-command-out {
+  color: var(--green-KNTI);
 }
 
 .light-theme-button {
   background-color: var(--light);
-  border-radius: 30px;
-  padding: 8px 30px;
   color: var(--dark);
+  border-radius: 25px;
+  padding: 8px 26px;
+  margin-left: 14px;
   transition: background-color .3s ease-in;
 }
 
@@ -115,16 +116,18 @@ main {
 
 
 .terminal {
-  width: 50vw;
+  width: 750px;
   height: 500px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .terminal-bar {
   background-color: var(--terminal-bar);
-  flex-basis: 55px;
-  border-radius: 10px 10px 0 0;
+  flex-basis: 50px;
+  border-radius: 6px 6px 0 0;
   display: flex;
 }
 
@@ -211,7 +214,8 @@ hr {
 }
 
 footer {
-  text-align: center;
+  margin-top: auto;
+  margin-bottom: 25px;
 }
 
 @keyframes glitch {
@@ -247,8 +251,8 @@ footer {
 }
 
 .pic {
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   position: relative;
   background: url(img/Logo.png) no-repeat;
   background-size: cover;
