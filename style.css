@@ -13,6 +13,7 @@
   --green-KNTI: #00FF00;
 
   --allert: rgb(197, 63, 39);
+  --inaccessible: #727a7780;
 
   --text-light: #E6E6E6;
 
@@ -53,7 +54,7 @@ body {
 
 .background-blur-active {
   visibility: visible;
-  opacity: .8;
+  opacity: .9;
 }
 
 .terminal-container {
@@ -107,6 +108,7 @@ body {
 }
 
 .hamburger-container {
+  position: relative;
   width: 50px;
   height: 50px;
   background: var(--terminal-x);
@@ -134,7 +136,7 @@ body {
   height: 3px;
   background-color: var(--text-light);
   position: relative;
-  transform: translateY(50%);
+  /* transform: translateY(50%); */
   transition: background-color .1s .2s ease-in-out;
 }
 
@@ -169,6 +171,68 @@ body {
 .hamburger-active .hamburger-inner:after {
   transform: translateY(-8px) rotate(-45deg);
 }
+
+.hamburger-menu {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  font-size: 22px;
+  top: 106px;
+  width: 90vw;
+  height: 600px;
+  background-color: var(--terminal-x);
+  box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  transition: visibility .4s, opacity .4s ease-in-out;
+}
+
+.hamburger-menu-active {
+  /* display: block; */
+  opacity: 1;
+  visibility: visible;
+}
+
+.hamburger-menu-list {
+  list-style: none;
+  font-weight: 700;
+}
+
+.hamburger-menu-list a {
+  text-decoration: none;
+  color: var(--text-light);
+  transition:color .3s ease-in;
+}
+
+.hamburger-menu-list a:hover {
+  color: var(--green-KNTI);
+}
+
+.hamburger-menu-item {
+  border-bottom: 1px solid var(--dark);
+  padding: 16px 26px 10px 26px;
+  transition: border-bottom .3s ease-in;
+  /* margin-top: 14px; */
+}
+
+.hamburger-menu-item:hover {
+  border-bottom: 1px solid var(--green-KNTI);
+}
+
+.inaccessible {
+  color: var(--inaccessible);
+}
+
+.inaccessible,
+.inaccessible:hover {
+  border-bottom: none;
+}
+
+.inaccessible:last-child {
+  border-bottom: 1px solid var(--dark);
+}
+
 
 .this-page a,
 .echo-command-out {
@@ -377,7 +441,7 @@ footer {
   animation: glitch 5s infinite linear;
 }
 
-@media all and (max-width: 950px) {
+@media all and (max-width: 1200px) {
 
   body {
     padding: 0 5vw;
@@ -452,6 +516,10 @@ footer {
 
   .navigation {
     padding: 14px 0;
+  }
+
+  .hamburger-menu {
+    top:96px;
   }
 }
 
