@@ -327,6 +327,11 @@ hr {
   border: 1px solid var(--terminal-line);
 }
 
+hr.post {
+  border: 1px solid var(--terminal-scroll);
+  margin-top: 10px;
+}
+
 .terminal-body {
   font-size: 20px;
   flex-grow: 1;
