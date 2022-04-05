@@ -521,5 +521,43 @@ footer {
   .hamburger-menu {
     top:96px;
   }
+
+  @keyframes glitch {
+    0% {
+        top: 0;
+        background-position: 9px 0;
+    }
+  
+    20% {
+        top: 86px;
+        background-position: -7px -76px
+    }
+  
+    40% {
+        top: 100px;
+        background-position: 4px -96px;
+    }
+  
+    60% {
+        top: 160px;
+        background-position: -4px -148px;
+    }
+  
+    80% {
+        top: 176px;
+        background-position: 7px -170px;
+    }
+  
+    100% {
+        top: 300px;
+        background-position: -11px -300px;
+    }
+  }
+
+  .pic::before {
+    width: 70px;
+    height: 14px;
+  }
+  
 }
 
