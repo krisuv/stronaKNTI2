@@ -1,0 +1,3 @@
+body.light {
+  background-color: linear-gradient(120deg, var(--light) 0%, rgba(0,255,0,0.27244401178440125) 100%);
+}
