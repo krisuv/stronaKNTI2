@@ -1,4 +1,3 @@
-const echoCommand = document.querySelector(".echo-command");
 const terminalUser = document.querySelector(".terminal-user");
 
 const cursor = document.createElement("span");

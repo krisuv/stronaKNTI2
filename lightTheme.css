@@ -1,3 +1,33 @@
 body.light {
-  background-color: linear-gradient(120deg, var(--light) 0%, rgba(0,255,0,0.27244401178440125) 100%);
+  --primary: #E6E6E6;
+  --secondary: #1A1A1A;
+  --text: #1A1A1A;
+  --green-KNTI: #02de02; 
+  background-color: var(--primary);
+}
+
+body.light .this-page  {
+  text-shadow: 1px 1px rgba(0, 150, 0, 0.5);
+}
+
+body.light .light-theme-button:hover {
+  color: var(--secondary);
+}
+
+@media (prefers-color-scheme: light) {
+  .light {
+    --primary: #E6E6E6;
+    --secondary: #1A1A1A;
+    --text: #1A1A1A;
+    --green-KNTI: #02de02; 
+    background-color: var(--primary);
+  }
+  
+  .light .this-page  {
+    text-shadow: 1px 1px rgba(0, 150, 0, 0.5);
+  }
+  
+  .light .light-theme-button:hover {
+    color: var(--secondary);
+  }
 }

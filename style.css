@@ -8,6 +8,10 @@
 
 
 :root {
+  --primary: #1A1A1A;
+  --secondary: #F5F4F2;
+  --text: #E6E6E6;
+
   --dark: #1A1A1A;
   --light: #F5F4F2;
   --green-KNTI: #00FF00;
@@ -27,7 +31,7 @@
 
 html {
   font-family: 'Ubuntu Mono', monospace;
-  color: var(--text-light);
+  color: var(--text);
 }
 
 body {
@@ -85,7 +89,7 @@ body {
 
 .menu a {
   display: block;
-  color: var(--text-light);
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -237,8 +241,8 @@ body {
 
 .light-theme-button {
   font-size: 24px;
-  background-color: var(--light);
-  color: var(--dark);
+  background-color: var(--secondary);
+  color: var(--primary);
   border-radius: 25px;
   padding: 8px 26px;
   margin-left: 14px;
@@ -366,6 +370,10 @@ hr.post {
   border-radius: 5px;
 }
 
+.new-echo-command {
+  padding-top: 16px;
+}
+
 .echo-command-out {
   padding-top: 10px;
   color: var(--green-KNTI);
@@ -383,9 +391,11 @@ a:link {
 }
 
 footer {
+  font-weight: 700;
   text-align: center;
   margin-top: auto;
   margin-bottom: 16px;
+  color: var(--text);
 }
 
 @keyframes glitch {
