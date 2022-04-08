@@ -11,7 +11,8 @@ body.light .this-page  {
 }
 
 body.light .light-theme-button:hover {
-  color: var(--secondary);
+  color: var(--green-KNTI);
+  background-color: var(--secondary);
 }
 
 @media (prefers-color-scheme: light) {
@@ -24,10 +25,11 @@ body.light .light-theme-button:hover {
   }
   
   .light .this-page  {
-    text-shadow: 1px 1px rgba(0, 150, 0, 0.5);
+    text-shadow: 1px 1px rgba(1, 88, 1, 0.852);
   }
   
   .light .light-theme-button:hover {
-    color: var(--secondary);
+    color: var(--green-KNTI);
+    background-color: var(--secondary);
   }
 }

@@ -246,7 +246,7 @@ body {
   border-radius: 25px;
   padding: 8px 26px;
   margin-left: 14px;
-  transition: background-color .3s ease-in;
+  transition: background-color .2s ease-in, color .2s ease-in;
 }
 
 .light-theme-button:hover {
