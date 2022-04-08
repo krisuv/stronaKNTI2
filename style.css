@@ -394,7 +394,7 @@ footer {
   font-weight: 700;
   text-align: center;
   margin-top: auto;
-  margin-bottom: 16px;
+  margin: 16px 0;
   color: var(--text);
 }
 
