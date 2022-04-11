@@ -33,3 +33,10 @@ body.light .light-theme-button:hover {
     background-color: var(--secondary);
   }
 }
+
+@media all and (max-width: 820px) {
+  body.light .light-theme-button:hover {
+    color: var(--text-light);
+    background-color: var(--dark);
+  }
+}

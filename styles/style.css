@@ -489,6 +489,33 @@ footer {
 }
 
 @media all and (max-width: 820px) {
+
+  .hamburger-menu-list a:hover {
+    color: var(--text-light);
+  }
+
+  .terminal-x:hover {
+    background-color: var(--terminal-x);
+    cursor: auto;
+  }
+
+  .hamburger-menu-item:hover {
+    border-bottom: 1px solid var(--dark);
+  }
+
+  .light-theme-button:hover {
+    background-color: var(--light);
+    cursor: auto;
+  }
+
+  .pic::before {
+    display: none;
+  }
+
+  .terminal-x:hover {
+    background-color:var(--terminal-x);
+    cursor: auto;
+  }
  
   .menu-item {
     display: none;
