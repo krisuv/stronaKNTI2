@@ -276,6 +276,7 @@ main {
   border-radius: 6px 6px 0 0;
   display: flex;
   border-bottom: 2px solid var(--terminal-line);
+  position: relative;
 }
 
 .terminal-header {
@@ -290,6 +291,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .terminal-x {
@@ -607,4 +612,10 @@ footer {
     height: 14px;
   }
   
+}
+
+@media all and (max-width: 300px) {
+  .terminal-x-container {
+    display: none;
+  }
 }
