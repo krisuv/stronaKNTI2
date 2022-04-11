@@ -261,7 +261,7 @@ main {
 
 .terminal {
   width: 750px;
-  height: 500px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -271,6 +271,7 @@ main {
   flex-basis: 50px;
   border-radius: 6px 6px 0 0;
   display: flex;
+  border-bottom: 2px solid var(--terminal-line);
 }
 
 .terminal-header {
@@ -366,7 +367,7 @@ hr.post {
 .terminal-scroll {
   background-color: var(--terminal-scroll);
   width: 7px;
-  height: 444px;
+  min-height: 444px;
   border-radius: 5px;
 }
 
