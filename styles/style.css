@@ -386,7 +386,7 @@ hr.post {
 }
 
 a:link {
-  color: var(--green-KNTI);
+  /* color: var(--green-KNTI); */
   text-decoration: none;
 }
 
