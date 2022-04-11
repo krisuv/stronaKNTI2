@@ -390,6 +390,10 @@ a:link {
   text-decoration: none;
 }
 
+.contact-link {
+  color: var(--green-KNTI);
+}
+
 footer {
   font-weight: 700;
   text-align: center;
