@@ -106,6 +106,7 @@ body {
 .menu-item:hover {
   background-color: var(--green-KNTI);
   cursor: pointer;
+  color: var(--dark);
 }
 
 .menu-item:hover a {
@@ -234,7 +235,7 @@ body {
 }
 
 
-.this-page a,
+.this-page,
 .echo-command-out {
   color: var(--green-KNTI);
 }
